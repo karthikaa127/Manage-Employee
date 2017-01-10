@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CI Join - Employee List</title>
+<!--CSS definitions-->
+<link href="../css/design.css" rel="stylesheet" type="text/css" />
+<!--JavaScript definitions-->
+<script type="text/javascript" src="../js/login_js.js"></script>
+
+</head>
+<body onload="document.getElementById('eid').focus();getStorage(); dynamic_1(); emplist_load();
+resetFields();">
+<div class="container" id="container"> 
+  <!--Header Starts Here-->
+  <div class="top"> </div>
+  <div class="header"> <img src="../Images/tag.png" />
+    <label id="credential">Welcome </label>
+    <a href="login.html" onclick="setStorage('username','')">Logout</a>
+    <h1 >Join <span>CI</span> </h1>
+  </div>
+  <!--Header Ends Here--> 
+  <!--Content Starts Here-->
+  <div class="content" id="content_div">
+    <ul id="tabs">
+    </ul>
+    <div class="tabContent" id="emp">
+      <div class="head">Add / Update an Employee</div>
+      <form name="emplist" id="fEmp">
+        <span class="headings">Profile:</span>
+        <div class="element">
+          <label for="eid">Employee ID :</label>
+          <input type="text" name="eid" id="eid"  maxlength="6" onkeypress="return isNumeric(event);" onblur="onblur_image();"/>
+        </div>
+        <div class="element">
+          <label for="ename">Employee Name :</label>
+          <input type="text" name="ename" id="ename" onkeypress="return isAlpha(event);" onblur="onblur_name();" />
+        </div>
+        <div class="element" id="element_title">
+          <label for="etitle">Title :</label>
+          <select name="etitle" id="etitle">
+            <option>Select Title</option>
+            <option>PA</option>
+            <option>PAT</option>
+            <option>PM</option>
+          </select>
+        </div>
+        <div class="element" id="element_position">
+          <label for="epos">Position :</label>
+          <span class="radio">
+          <input type="radio" name="epos" value="On Site"/>
+          On site
+          <input type="radio" name="epos" value="Off Shore"/>
+          Off shore </span> </div>
+        <div class="element">
+          <label for="ecomp">Competency :</label>
+          <select name="ecomp" id="ecomp">
+            <option>Select Your Competency</option>
+            <option>CI RIA</option>
+            <option>CI Web</option>
+          </select>
+        </div>
+        <span class="headings">Emergency Contact:</span>
+        <div class="element">
+          <label for="econtact">Contact No :</label>
+          <input type="text" name="econtact" id="econtact" maxlength="12" onkeypress="return isNumeric(event);" />
+        </div>
+        <div class="element">
+          <label for="eblood">Blood Group :</label>
+          <input type="text" name="eblood" id="eblood" />
+        </div>
+        <div class="element">
+          <label for="eaddr" id="addr_label">Address :</label>
+          <textarea name="eaddr" id="eaddr" rows="5"></textarea>
+        </div>
+        <div class="btn">
+          <input type="button" id="btnSave" name="save" value="Save" class="button grad" onclick="emplist_validate();" />
+          <input type="reset" id="btnReset" name="reset" value="Reset" class="button grad" onclick="resetFields();" />
+        </div>
+        <span class="headings">Employee List</span>
+      </form>
+      <img src="../Images/idcards.png" class="pos" /> <img id="dynamic_img" class="dynamic_img" />
+      <div class="div_name" >
+      
+        <label id="dynamic_name" class="dynamic_name"></label>
+      </div>
+      <div class="div_id">
+      <label  id="dynamic_id" class="dynamic_id"></label>
+      </div>
+      <label  id="dynamic_id1" class="dynamic_id1"></label>
+      <label  id="dynamic_contact" class="dynamic_contact"></label>
+      <label  id="dynamic_blood" class="dynamic_blood"></label>
+      <div class="div_address">
+        <label  id="dynamic_address" class="dynamic_address"></label>
+      </div>
+      
+      <table width="100%" id="table_employee">
+        <thead>
+          <tr>
+            <th width="15%">Employee Id</th>
+            <th width="25%">Employee Name</th>
+            <th width="5%">Title</th>
+            <th width="15%">Competency</th>
+            <th width="15%">Position</th>
+            <th width="25%">Edit</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </div>
+  <!--Header Ends Here--> 
+  <!--Footer Starts Here-->
+  
+  <div class="footer"> Powered by CI Team </div>
+</div>
+<!--Header Ends Here-->
+</body>
+</html>

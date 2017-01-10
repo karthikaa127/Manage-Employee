@@ -1,0 +1,163 @@
+@charset "utf-8";
+* {
+	outline:0;
+	margin:0;
+	padding:0;
+}
+.container {
+	width:995px;
+	position:relative;
+	margin: 0 auto;
+	font-family:Verdana, Geneva, sans-serif;
+}
+.top {
+	height:15px;
+	background:#0A67AF;
+}
+.header {
+	height:140px;
+	background: #eeeeee; /* Old browsers */
+	background: -moz-linear-gradient(-75deg, #eeeeee 0%, #eeeeee 50%, #e8e8e8 51%, #e8e8e8 77%,#eeeeee 78%, #eeeeee 100%); /* FF3.6+ */	
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#eeeeee), color-stop(50%,#eeeeee), color-stop(51%,#e8e8e8), color-stop(77%,#e8e8e8), color-stop(78%, #eeeeee),
+	color-stop(100%,#eeeeee)
+	); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-75deg, #eeeeee 0%,#eeeeee 50%,#e8e8e8 51%,#e8e8e8 77%,#eeeeee 78%, #eeeeee 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-75deg, #eeeeee 0%,#eeeeee 50%,#e8e8e8 51%,#e8e8e8 77%,#eeeeee 78%,#eeeeee 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-75deg, #eeeeee 0%,#eeeeee 50%,#e8e8e8 51%,#e8e8e8 77%,#eeeeee 78%,#eeeeee 100%); /* IE10+ */
+	background: linear-gradient(-75deg, #eeeeee 0%,#eeeeee 50%,#e8e8e8 51%,#e8e8e8 77%,#eeeeee 78%,#eeeeee 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+	position:relative;
+}
+.header h1 {
+	position:absolute;
+	left:652px;
+	bottom : -10px;
+	font-family:"Tw Cen MT";
+	font-size: 68px;
+	font-weight:300;
+	color: #4c4646;
+}
+.header img {
+	left:650px;
+	position:absolute;
+	top: 10px;
+}
+.header h1 span {
+	font-family:"Times New Roman", Times, serif;
+	font-size:68px;
+	padding-left:4px;
+}
+
+.footer {
+	height:50px;
+	background:#9f9fa0;
+	bottom:1px;
+	text-align:center;
+	padding-top: 25px;
+	color:#FFF
+}
+
+.login_form {
+	width:350px;
+	height:300px;
+	margin: 50px auto;
+	border:solid thin #aaa;
+	background:#eee;
+}
+.login_form label.grad {
+	padding: 15px 15px;
+	display:block;
+}
+.login_form .line {
+	margin: 0 auto;
+	width:95%;
+}
+.button {
+	border:solid thin #aaa;
+	width:60px;
+	overflow:visible;
+	text-align:center;
+	white-space:nowrap;
+}
+.element {
+	margin: 0 auto;
+	font-size:small;
+	padding: 15px 50px 5px 10px;
+	text-align:right;
+}
+.btn {
+	margin: 0 auto;
+	font-size:small;
+	padding: 20px;
+	text-align:center;
+}
+
+
+ul#tabs {
+	list-style-type: none;
+	margin: 30px 0 0 0;
+	padding: 0 0 0.3em 0;
+}
+ul#tabs li {
+	display: inline;
+}
+ul#tabs li a {
+	color: #42454a;
+	background-color: #dedbde;
+	border: 1px solid #c9c3ba;
+	-moz-border-top-left-radius: 5px;
+	-moz-border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom: none;
+	padding: 0.3em;
+	text-decoration: none;
+}
+ul#tabs li a:hover {
+	background-color: #f1f0ee;
+}
+ul#tabs li a.selected {
+	color: #000;
+	background-color: #f1f0ee;
+	font-weight: bold;
+	padding: 0.7em 0.3em 0.38em 0.3em;
+}
+div.tabContent {
+	border: 1px solid #c9c3ba;
+	padding: 0.5em;
+	background-color: #f1f0ee;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:small;
+	height:500px;
+}
+div.tabContent.hide {
+	display: none;
+}
+
+div.tabContent .head{
+	background:#0d9c49;
+	padding:10px;
+	font-weight:bolder;
+	color:#FFF;
+}
+
+div.tabContent span{
+	text-decoration:underline;
+	font-weight:bold;
+}
+div.tabContent form{
+	width:350px;
+	padding: 25px 10px;
+
+}
+div.tabContent label{
+	color:#444;
+}
+div.tabContent input[type="text"],select,textarea{
+	width:175px;
+}
+div.tabContent .radio {
+	width:175px;
+	display:inline;
+}

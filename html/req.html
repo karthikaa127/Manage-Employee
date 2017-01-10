@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CI Join - Resource Request</title>
+<link href="../css/design.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="../js/login_js.js"></script>
+
+</head>
+
+<body onload="document.getElementById('rdes').focus();getStorage(); dynamic_2(); reslist_load();
+resetFields();">
+
+<div class="container" id="container">
+  <div class="top"> </div>
+  <div class="header"> <img src="../Images/tag.png" />
+  <label id="credential">Welcome </label>
+  <a href="login.html" onclick="setStorage('username','')">Logout</a>
+    <h1 >Join <span>CI</span> </h1>
+  </div>
+<div class="content" id="content_div">
+ <ul id="tabs"></ul>
+    <div class="tabContent" id="res">
+    <div style="position:relative">
+      <div class="head">Request For Resource</div>
+      <form name="emplist" id="fRes">
+        <span class="headings">Profile:</span>
+        <div class="element">
+          <label for="rdes">Designation :</label>
+          <select name="rdes" id="rdes">
+            <option>Select Your Designation</option>
+            <option>Associate</option>
+            <option>Programmer Analyst</option>
+            <option>Project Manager</option>
+          </select>
+        </div>
+        <div class="element">
+          <label for="rexp">Experience in years:</label>
+          <input type="text" name="rexp" id="rexp" onkeypress="return isNumeric(event);"/>
+        </div>
+        <div class="element">
+          <label for="rnum">Numbers :</label>
+          <input type="text" name="rnum" id="rnum"onkeypress="return isNumeric(event);" />
+        </div>
+        <div class="element" id="element_skill">
+          <label for="rskills">Skills :</label>          
+          <input type="checkbox" name="rskills" id="rskills" value="HTML" />HTML
+          <input type="checkbox" name="rskills" id="rskills" value="CSS" />CSS
+          <input type="checkbox" name="rskills" id="rskills" value="JavaScript" />JavaScript
+          <input type="checkbox" name="rskills" id="rskills" class="rskills1" value="JQ" /><span class="sp_1">JQ</span>
+          <input type="checkbox" name="rskills" id="rskills" class="rskills2" value="Flash" /><span class="sp_2">Flash</span>
+          <input type="checkbox" name="rskills" id="rskills" class="rskills3" value="Flex" /><span class="sp_3">Flex</span> 
+        </div>
+        <div class="element">
+          <label for="rcomp">Competency :</label>
+          <select name="rcomp" id="rcomp">
+            <option>Select Your Competency</option>
+            <option>CI RIA</option>
+            <option>CI Web</option>
+          </select>
+        </div>
+        <div class="element" id="element_position_req">
+          <label for="rpos1">Position :</label>
+          <input type="radio" name="rpos" value="On Site"/>
+          On site
+          <label for="rpos"></label>
+          <input type="radio" name="rpos" value="Off Shore"/>
+          Off shore 
+        </div>
+        
+        <div class="element">
+          <label for="rloc">Location :</label>
+          <select name="rloc" id="rloc">
+            <option>Select Your Location</option>
+            <option>Bangalore</option>
+            <option>Chennai</option>
+            <option>Cochin</option>
+            <option>Coimbatore</option>
+            <option>Hyderabad</option>
+            <option>Kolkata</option>
+            <option>Mumbai</option>
+            <option>Pune</option>
+          </select>
+        </div>        
+        <div class="btn">
+          <input type="button" id="btnSave" name="save" value="Save" class="button grad" onclick="reslist_validate();" />
+          <input type="reset" id="btnReset" name="reset" value="Reset" class="button grad" onclick="resetFields();" />
+        </div>
+        <span class="headings">Request List</span>
+      </form>
+      <table width="100%" id="table_resource">
+        <thead>
+          <tr>
+            <th width="15%">Request ID</th>
+            <th width="15%">Designation</th>
+            <th width="15%">Position</th>
+            <th width="5%">No.</th>
+            <th width="15%">Competency</th>
+            <th width="10%">Location</th>
+            <th width="25%">Edit</th>
+          </tr>
+        </thead>
+        
+      </table>
+      </div>
+    </div>
+</div>
+
+ <div class="footer"> Powered by CI Team </div>
+</div>
+
+</body>
+</html>

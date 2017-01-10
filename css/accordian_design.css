@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+
+.AccordionTitle, .AccordionContainer
+{
+  width:935px;
+}
+
+.AccordionTitle
+{
+	background-color: #D4D4D4;
+	padding: 7px 0 0 0 ;
+	height:20px;
+	overflow:hidden;
+	cursor:pointer;
+	font-family:Arial;
+	font-size:9pt;
+	font-weight:bold;
+}
+
+#Accordion_Title1,#Accordion_Title2,#Accordion_Title3,#Accordion_Title4
+{
+	background-image:url(../Images/iconup.png);
+	background-repeat:no-repeat;
+	background-position:3px center;
+}
+
+
+div.AccordionTitle span
+{
+	padding: 0 0 0 28px;
+	text-decoration:none;
+}
+
+.AccordionContent
+{
+  overflow:hidden;
+  display: none;
+  text-align : justify;
+  padding:5px 15px 0 7px;
+}
+
+.AccordionContainer
+{
+	position:absolute;
+	top: 75px;
+	left: 33px;
+}

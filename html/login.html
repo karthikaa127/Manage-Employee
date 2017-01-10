@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CI Join - Login</title>
+
+<link href="../css/design.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="../js/login_js.js"></script>
+
+</head>
+
+<body onload='initial_load("uname","pass")'>
+<div class="container">
+    <div class="top">
+    </div>
+    <div class="header">
+    <img src="../Images/tag.png" />
+    <h1 >Join <span>CI</span> </h1>
+    </div>
+    <div class="content" id="content">
+    
+    
+        <form name="login" class="login_form">
+          <label class="grad" for="login">Login</label>
+          <hr class="line" />
+          <div class="element1">
+          <label for="uname">UserName : </label>
+          <input type="text" id="uname" name="uname" maxlength="10" onkeypress="return login_validate(event)" onkeydown="if (event.keyCode == 13) document.getElementById('btnLogin').click()" />
+          </div>
+          <div class="element2">
+          <label for="pass">Password : </label>
+          <input type="password" id="pass" name="pass" maxlength="10" onkeydown="if (event.keyCode == 13) document.getElementById('btnLogin').click()" />
+          </div>
+          <div class="btn">
+          <input type="button" id="btnLogin" name="login" value="Login" class="button grad" onclick='login_validate_empty("uname","pass")' />
+          </div>
+        </form>
+              
+  </div>
+    <div class="footer">
+    Powered by CI Team
+    </div>
+</div>
+</body>
+</html>

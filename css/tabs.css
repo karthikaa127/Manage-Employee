@@ -1,0 +1,130 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+ margin: 0 0 0 0;
+}
+
+ul#tabs {
+	list-style-type: none;
+	margin: -24px 0 0 15px;
+	padding: 0 0 0.3em 0;
+}
+ul#tabs li {
+	display: inline;
+	
+}
+ul#tabs li span.tab {
+	font-size:10px;
+	font-weight:200;
+	padding:0 15px 0 15px;
+}
+ul#tabs li span.tab_faq {
+	font-size:9px;
+	font-weight:200;
+	padding:0 25px 0 25px;
+}
+.res_list
+{
+margin:0 0 0 6px;
+}
+
+ul#tabs li a {
+	color: #42454a;
+	background-color: #dedbde;
+	border: 1px solid #c9c3ba;
+	-moz-border-top-left-radius: 5px;
+	-moz-border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom: none;
+	padding: 0.3em;
+	text-decoration: none;
+}
+ul#tabs li a:hover {
+	background-color: #f1f0ee;
+}
+ul#tabs li a.selected {
+	color: #0d9c49;
+	background-color: #f1f0ee;
+	font-weight: 400;
+	padding: 0.7em 0.3em 0.38em 0.3em;
+}
+div.tabContent {
+	border: 1px solid #c9c3ba;
+	padding: 0.5em;
+	background-color: #f1f0ee;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:small;
+	min-height:550px;	
+}
+div.tabContent.hide {
+	display: none;
+}
+
+div.tabContent .head{
+	background:#0d9c49;
+	margin:-5px -5px -5px -5px ;
+	padding:10px 10px 10px 10px;
+	font-weight:bolder;
+	color:#FFF;	
+}
+
+div.tabContent span.headings{
+	text-decoration:underline;
+	font-weight:bold;
+	
+	
+}
+div.tabContent form{
+	width:360px;
+	padding: 25px 10px;
+	
+}
+div.tabContent form label{
+	color:#444;
+}
+div.tabContent input[type="text"],select,textarea{
+	width:175px;
+	resize:none;
+}
+div.tabContent .radio {
+	width:175px;
+	
+}
+div.tabContent .button {
+	border:solid thin #aaa;
+	width:60px;
+	overflow:visible;
+	text-align:center;
+	white-space:nowrap;
+}
+div.tabContent .element {
+	margin: 0 auto;
+	font-size:small;
+	padding: 15px 50px 5px 10px;
+	text-align:right;
+}
+div.tabContent .btn {
+	margin: 0 auto;
+	font-size:small;
+	padding: 20px;
+	text-align:center;
+}
+div table{
+	border:solid thin #999;
+	padding:0;
+}
+div.tabContent thead{
+	background:#e2e2e1;
+}
+
+div#faq
+{
+background: #ffffff;
+
+}
+#emp img.pos{
+	position:absolute;
+	left:440px;
+	top:80px
+}
